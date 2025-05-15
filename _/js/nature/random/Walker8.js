@@ -6,34 +6,30 @@ class Walker {
     this.y = height / 2;
   }
 
+  show() {
+    stroke(0);
+    point(this.x, this.y);
+  }
+
   step() {
-    const choice = floor(random(4));
-    if (choice === 0) {
-      this.x++;
-    } else if (choice === 1) {
-      this.x--;
-    } else if (choice === 2) {
-      this.y++;
-    } else {
-      this.y--;
-    }
+    const xstep = floor(random(3)) - 1;
+    const ystep = floor(random(3)) - 1;
+    this.x += xstep;
+    this.y += ystep;
+    
     // Keep walker within canvas
     this.x = constrain(this.x, 0, width - 1);
     this.y = constrain(this.y, 0, height - 1);
   }
 
-  show() {
-    stroke(0, 50);
-    point(this.x, this.y);
-  }
 }
 
 let walker;
 
 function setup() {
-  createCanvas(600, 400);
-  background(255);
+  createCanvas(640, 240);
   walker = new Walker();
+  background(255);
 }
 
 function draw() {
