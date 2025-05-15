@@ -46,8 +46,8 @@ function draw() {
 	fill(127);
 	let w = width / randomCounts.length;
 
-	for (let x = 0; x < randomCounts; x++) {
-		rect(x * w, height --)
+	for (let x = 0; x < randomCounts.length; x++) {
+		rect(x * w, height - randomCounts[x], w-1, randomCounts[x])
 	}
 	walker.step();
 	walker.show();
