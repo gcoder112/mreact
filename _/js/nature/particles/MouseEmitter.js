@@ -1,17 +1,24 @@
-let emitter;
+let emitters = [];
 
 function setup() {
-  createCanvas(640, 360);
-  emitter = new Emitter();
+  createCanvas(800, 640);
+}
+
+function mousePressed() {
+  emitters.push(new Emitter(mouseX, mouseY));
 }
 
 function draw() {
   background(255);
-  emitter.run();
+  for (let emitter of emitters) {
+    emitter.run();
+    emitter.addParticle();
+  }
 }
 
 class Emitter {
   constructor(x, y) {
+    this.orgin = createVector(x, y);
     this.particles = [];
   }
 
