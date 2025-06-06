@@ -9,3 +9,4 @@
 0	fsb2h	--	lxxtw://fsb2h.svk
 0	t5tpec	--	lxxtw://t5tpec.svk
 0	qexxivnw.ghr	--	lxxtw://ghrnw.gpsyhjpevi.gsq/eneb/pmfw/qexxiv-nw/0.19.0/qexxiv.qmr.nw
+0	xsbmgpmf.ghr	--	lxxtw://ghr.nwhipmzv.rix/kl/letxmghexe/xsbmgpmfwnw@0.3.2/fymph/xsbmgpmfw.qmr.nw
